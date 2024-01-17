@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ccc;
+    }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background-color: #333;
+      align-items: center;
+    }
+    header nav ul li {
+      padding: 15px;
+    }
+    header nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+    header nav ul li a:hover {
+      color: orange;
+    }
+        .content {
+            margin: 0 auto;
+            width: 80%;
+            padding: 20px 0;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        img.logo {
+            max-width: 40px;
+            height: auto;
+            margin-right: 5px;
+            transition: transform 0.3s ease-in-out; /* ใส่ transition สำหรับการเปลี่ยนแปลง */
+
+        }
+        img.logo:hover {
+            transform: scale(1.1); /* เพิ่มการ scale เมื่อ hover */
+        }
+        .search-container {
+            position: absolute;
+            top: 37px; /* ปรับตำแหน่งสูงต่ำได้ที่นี่ */
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        /* สไตล์ input สำหรับช่องค้นหา */
+        .search-container input[type="text"] {
+            padding: 6px;
+            font-size: 17px;
+            border: none;
+        }
+
+        /* สไตล์ปุ่มค้นหา */
+        .search-container button {
+            padding: 6px 10px;
+            margin-left: 5px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ปรับขนาด input และปุ่มค้นหาให้สอดคล้อง */
+        @media screen and (max-width: 600px) {
+            .search-container {
+                position: relative;
+                right: auto;
+                top: auto;
+                text-align: center;
+                transform: translateY(0%);
+            }
+
+            .search-container input[type="text"],
+            .search-container button {
+                width: 100%;
+                margin: 0;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="JP.png" alt="logo" class="logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="work.html">Work Experience</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li class="search-container">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit">Search</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>Education</h1>
+        <img src="education.png" alt="" style="max-width: 20%; height: auto;">
+
+    </div>
+    <table style="width:100%">
+      <tr>
+          <th colspan="2">Year</th>
+          <th rowspan="2">School/University</th>
+      </tr>
+      <tr>
+          <th>from</th>
+          <th>To</th>
+      </tr>
+      <tr>
+        <td>2009</td>
+        <td>2014</td>
+        <td>Elementary School</td>
+      </tr>
+      <tr>
+        <td>2015</td>
+        <td>2019</td>
+        <td>highschool</td>
+      </tr>
+      <tr>
+          <td>2019</td>
+          <td>2022</td>
+          <td>University</td>
+      </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jathupol Pimkal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ccc;
+    }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background-color: #333;
+      align-items: center;
+    }
+    header nav ul li {
+      padding: 15px;
+    }
+    header nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+    header nav ul li a:hover {
+      color: orange;
+
+    }
+    img.logo {
+            max-width: 40px;
+            height: auto;
+            margin-right: 5px;
+            transition: transform 0.3s ease-in-out; /* ใส่ transition สำหรับการเปลี่ยนแปลง */
+
+        }
+        img.logo:hover {
+            transform: scale(1.1); /* เพิ่มการ scale เมื่อ hover */
+        }
+        .search-container {
+            position: absolute;
+            top: 37px; /* ปรับตำแหน่งสูงต่ำได้ที่นี่ */
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        /* สไตล์ input สำหรับช่องค้นหา */
+        .search-container input[type="text"] {
+            padding: 6px;
+            font-size: 17px;
+            border: none;
+        }
+
+        /* สไตล์ปุ่มค้นหา */
+        .search-container button {
+            padding: 6px 10px;
+            margin-left: 5px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ปรับขนาด input และปุ่มค้นหาให้สอดคล้อง */
+        @media screen and (max-width: 600px) {
+            .search-container {
+                position: relative;
+                right: auto;
+                top: auto;
+                text-align: center;
+                transform: translateY(0%);
+            }
+
+            .search-container input[type="text"],
+            .search-container button {
+                width: 100%;
+                margin: 0;
+                border-radius: 5px;
+            }
+        }
+  </style>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html"><img src="JP.png" alt="logo" class="logo"></a></li>
+              <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="work.html">Work Experience</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li class="search-container">
+                  <input type="text" placeholder="Search..">
+                  <button type="submit">Search</button>
+              </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <hr>
+            
+            <h1>Jathupol Pimkal</h1>
+            <h2>...................................</h2>
+            <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/316956675_1998400397017466_1616541946221092161_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=uHmU6hXdN2EAX9PEWRH&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfAiKAYRPuna-Wb5KYLwFwvXpRRhCJJmNWDkexPzUJdsuQ&oe=65617490" alt="" style="max-width: 20%; height: auto;">
+           
+            <p>Energetic web developer with certificated from Codecamp Thailand (#13). Codecamp is one of the best developer's bootcamp in Thailand.</p>
+            <hr>
+        </section>
+
+        <section id="Persornal">
+            <h1>Persornal Info</h1>
+            <p>Phone: (66) 65-6233556</p>
+            <p>E-mail: jatupol677@gmail.com</p>
+            <p>Line ID: pon132530</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; </p>
+    </footer>
+</body>
+</html>

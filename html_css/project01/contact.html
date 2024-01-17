@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="text-align: center;">contact</title>
+    <style>
+            body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ccc;
+    }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background-color: #333;
+      align-items: center; /* จัดให้รูปและข้อความอยู่ตรงกัน */
+
+    }
+    header nav ul li {
+      padding: 15px;
+    }
+    header nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+    header nav ul li a:hover {
+      color: orange;
+    }
+    table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        form div {
+            margin-bottom: 15px;
+        }
+
+        form label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        form input[type="text"],
+        form textarea {
+            width: calc(100% - 120px); 
+            padding: 5px;
+        }
+
+        form select {
+            width: calc(100% - 120px);
+            padding: 5px;
+        }
+
+        form div:last-child {
+            text-align: right;
+        }
+
+        form button {
+            padding: 8px 20px;
+            margin-left: 10px;
+        }
+        img.logo {
+            max-width: 40px;
+            height: auto;
+            margin-right: 5px;
+            transition: transform 0.3s ease-in-out; /* ใส่ transition สำหรับการเปลี่ยนแปลง */
+
+        }
+        img.logo:hover {
+            transform: scale(1.1); /* เพิ่มการ scale เมื่อ hover */
+        }
+        .search-container {
+            position: absolute;
+            top: 37px; /* ปรับตำแหน่งสูงต่ำได้ที่นี่ */
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        /* สไตล์ input สำหรับช่องค้นหา */
+        .search-container input[type="text"] {
+            padding: 6px;
+            font-size: 17px;
+            border: none;
+        }
+
+        /* สไตล์ปุ่มค้นหา */
+        .search-container button {
+            padding: 6px 10px;
+            margin-left: 5px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ปรับขนาด input และปุ่มค้นหาให้สอดคล้อง */
+        @media screen and (max-width: 600px) {
+            .search-container {
+                position: relative;
+                right: auto;
+                top: auto;
+                text-align: center;
+                transform: translateY(0%);
+            }
+
+            .search-container input[type="text"],
+            .search-container button {
+                width: 100%;
+                margin: 0;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="JP.png" alt="logo" class="logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="work.html">Work Experience</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li class="search-container">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit">Search</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+        <h1 style="text-align: center; color: coral; text-shadow: #333 ; box-shadow: #333; ;">contact me</h1>
+    </header>
+
+    <main>
+        <tr>
+            <form>
+                <div>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">Your E-mail:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" style="width: 80px;">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" style="height: 150px;"></textarea>
+            </div>
+            <div>
+                <button type="submit">Send</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+        </tr>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Jathupol. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
